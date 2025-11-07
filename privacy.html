@@ -26,28 +26,64 @@
             </section>
 
             <section>
-                <h3>Information We Don't Collect</h3>
-                <p>CardWise is designed with privacy as a core principle. We do not collect, transmit, or store any of your personal information, including:</p>
+                <h3>What Information CardWise Does NOT Collect</h3>
+                <p>CardWise is designed with privacy as a core principle. We do not collect, transmit, or store any of your personal information on our servers. Here's what we specifically DO NOT collect:</p>
                 <ul>
-                    <li>Credit card numbers or financial account information</li>
-                    <li>Transaction history or spending data</li>
-                    <li>Personal identification information (name, email, phone number, etc.)</li>
-                    <li>Location data</li>
-                    <li>Usage analytics or behavioral data</li>
-                    <li>Device identifiers</li>
+                    <li><strong>Real Credit Card Numbers:</strong> CardWise never asks for or stores your actual credit card numbers, CVV codes, expiration dates, or any sensitive banking information</li>
+                    <li><strong>Personal Identification:</strong> No names, emails, phone numbers, addresses, or any personally identifiable information</li>
+                    <li><strong>Transaction History:</strong> Your spending records and transaction data never leave your device</li>
+                    <li><strong>Location Data:</strong> We don't track or collect your location</li>
+                    <li><strong>Usage Analytics:</strong> No behavioral tracking, analytics, or telemetry data is collected</li>
+                    <li><strong>Device Identifiers:</strong> We don't collect device IDs or any hardware information</li>
                 </ul>
             </section>
 
             <section>
-                <h3>Local Data Storage</h3>
+                <h3>How CardWise Works - Complete Privacy</h3>
+                <p>CardWise is designed to work entirely on your device without any server communication for your personal data:</p>
+
+                <h4>What You Enter:</h4>
+                <ul>
+                    <li><strong>Card Nicknames Only:</strong> You only enter a name/label for each card (e.g., "Blue Cash Card", "Travel Rewards"). This is just for your own reference - we never see this information.</li>
+                    <li><strong>Cashback Rates:</strong> You manually set the cashback percentages for different spending categories. This information stays on your device only.</li>
+                    <li><strong>Transaction Amounts:</strong> When you log spending, only the amounts and categories are stored locally - no merchant names, locations, or other identifying details are required or transmitted.</li>
+                </ul>
+
+                <h4>Country/Region Selection:</h4>
+                <p>CardWise allows you to select your country or region. This setting:</p>
+                <ul>
+                    <li>Is stored <strong>locally on your device only</strong></li>
+                    <li>Is used to customize the app's spending categories to match local shopping patterns</li>
+                    <li>Adjusts currency display and formatting</li>
+                    <li>May enable region-specific card types and templates</li>
+                    <li><strong>Is never transmitted to our servers or any third party</strong></li>
+                </ul>
+                <p>Your country selection is purely for enhancing your local experience - we have no way of knowing which country you selected.</p>
+            </section>
+
+            <section>
+                <h3>Local Data Storage Only</h3>
                 <p>All data you enter into CardWise is stored exclusively on your device using Apple's secure local storage (Core Data). This includes:</p>
                 <ul>
-                    <li>Credit card information you manually add</li>
-                    <li>Cashback rates and category assignments</li>
-                    <li>Transaction records you create</li>
-                    <li>Spending insights and statistics</li>
+                    <li><strong>Card Information:</strong> Only the card nicknames you create and cashback rates you set</li>
+                    <li><strong>Transaction Records:</strong> Spending amounts and categories you manually log</li>
+                    <li><strong>Spending Insights:</strong> All statistics, charts, and recommendations are calculated locally on your device</li>
+                    <li><strong>App Settings:</strong> Your preferences, selected country/region, and app customizations</li>
                 </ul>
-                <p>This data never leaves your device and is protected by your device's security measures, including encryption when your device is locked.</p>
+                <p><strong>Important:</strong> This data never leaves your device. It is not synced to our servers, transmitted over the internet, or shared with anyone. The data is protected by your device's security measures, including encryption when your device is locked.</p>
+            </section>
+
+            <section>
+                <h3>No Real Banking Information Required</h3>
+                <p>CardWise is a <strong>manual tracking and recommendation tool</strong>, not a bank or financial institution. Here's what that means:</p>
+                <ul>
+                    <li>You are <strong>never</strong> asked to connect your actual bank accounts</li>
+                    <li>You are <strong>never</strong> asked to provide real credit card numbers</li>
+                    <li>You are <strong>never</strong> asked to enter CVV codes or security information</li>
+                    <li>All card information is entered manually by you using nicknames of your choice</li>
+                    <li>Transaction tracking is completely manual - you log what you want to track</li>
+                </ul>
+                <p>This manual approach ensures maximum privacy: we can't collect what you don't provide, and you're in complete control of every piece of information in the app.</p>
             </section>
 
             <section>
@@ -75,12 +111,25 @@
 
             <section>
                 <h3>Third-Party Services</h3>
-                <p>CardWise uses minimal third-party services:</p>
+                <p>CardWise uses minimal third-party services, and importantly, <strong>none of them receive your card data, transaction history, or personal information</strong>:</p>
                 <ul>
-                    <li><strong>RevenueCat:</strong> Used solely for subscription management. Only anonymous subscription status is shared.</li>
-                    <li><strong>Apple Services:</strong> App Store, iCloud (if enabled by you), and push notifications (if enabled by you).</li>
+                    <li><strong>RevenueCat:</strong> Used solely for subscription management. Only an anonymous identifier is shared to verify your subscription status. RevenueCat never receives any information about your cards, spending, or transactions.</li>
+                    <li><strong>Apple Services:</strong>
+                        <ul>
+                            <li>App Store (for app distribution and in-app purchases)</li>
+                            <li>iCloud (only if you explicitly enable it - see iCloud section below)</li>
+                            <li>Push notifications (only if you enable them - used for optional spending reminders)</li>
+                        </ul>
+                    </li>
                 </ul>
-                <p>We do not use analytics services, advertising networks, or any other third-party tracking tools.</p>
+                <p><strong>What we DON'T use:</strong></p>
+                <ul>
+                    <li>No analytics services (Google Analytics, Mixpanel, etc.)</li>
+                    <li>No advertising networks or ad tracking</li>
+                    <li>No crash reporting tools that collect personal data</li>
+                    <li>No social media integrations or tracking pixels</li>
+                    <li>No location tracking services</li>
+                </ul>
             </section>
 
             <section>
@@ -123,8 +172,29 @@
             </section>
 
             <section>
+                <h3>No Server-Side Data Processing</h3>
+                <p>CardWise operates fundamentally differently from most financial apps:</p>
+                <ul>
+                    <li><strong>No Data Transmission:</strong> Your card information, transactions, and spending data are never transmitted to any server, including ours</li>
+                    <li><strong>No Account Required:</strong> You don't create an account, so there's no server-side profile with your data</li>
+                    <li><strong>No Cloud Storage (unless you choose):</strong> By default, data stays on your device. If you enable iCloud, it goes to your personal iCloud, not our servers</li>
+                    <li><strong>All Processing Happens Locally:</strong> Cashback calculations, spending insights, card recommendations - everything is computed on your device using your device's processor</li>
+                </ul>
+                <p>This architecture makes it technically impossible for us to access, collect, or misuse your financial data - because we never receive it in the first place.</p>
+            </section>
+
+            <section>
                 <h3>Summary</h3>
-                <p><strong>The Bottom Line:</strong> CardWise is built with privacy by design. We can't access your data because we never receive it in the first place. Your financial information, spending habits, and personal data remain private to you, stored securely on your device, and optionally in your personal iCloud account.</p>
+                <p><strong>The Bottom Line:</strong></p>
+                <ul>
+                    <li>✅ You enter only card <strong>nicknames</strong>, not real card numbers</li>
+                    <li>✅ All data is stored <strong>locally on your device</strong></li>
+                    <li>✅ Your country selection is <strong>only used locally</strong> to customize the app</li>
+                    <li>✅ <strong>Nothing is sent to our servers</strong> - no tracking, no analytics, no data collection</li>
+                    <li>✅ We can't access your data even if we wanted to - <strong>we never receive it</strong></li>
+                    <li>✅ Your financial information, spending habits, and personal preferences remain <strong>100% private</strong></li>
+                </ul>
+                <p>CardWise is built with privacy by design. We believe your financial data is yours alone, and we've architected the app to ensure it stays that way.</p>
             </section>
         </main>
 
