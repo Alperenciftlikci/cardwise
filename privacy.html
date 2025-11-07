@@ -44,33 +44,42 @@
 
                 <h4>What You Enter:</h4>
                 <ul>
-                    <li><strong>Card Nicknames Only:</strong> You only enter a name/label for each card (e.g., "Blue Cash Card", "Travel Rewards"). This is just for your own reference - we never see this information.</li>
-                    <li><strong>Card Cashback Information:</strong> You enter your card's cashback rates for different spending categories based on your card's benefits. The app uses this to recommend which card to use, but all this information stays on your device only.</li>
-                    <li><strong>Transaction Amounts:</strong> When you log spending, only the amounts and categories are stored locally - no merchant names, locations, or other identifying details are required or transmitted.</li>
+                    <li><strong>Country Selection:</strong> You select your country to see relevant credit cards. This selection is stored locally on your device only and is used to display cards available in your region with appropriate currency formatting.</li>
+                    <li><strong>Card Selection:</strong> You select credit cards from our pre-loaded database of popular cards. The app already includes cashback rates for these cards - you never enter actual credit card numbers, CVV codes, or any real banking credentials.</li>
+                    <li><strong>Card Nicknames (Optional):</strong> You can optionally add a personal nickname for each card (e.g., "My Travel Card"). This is purely for your reference and stays on your device.</li>
+                    <li><strong>Transaction Logging:</strong> When you manually log spending, you enter:
+                        <ul>
+                            <li>Amount spent</li>
+                            <li>Spending category (groceries, dining, gas, etc.)</li>
+                            <li>Which card you used (from your saved cards)</li>
+                            <li>Date of purchase</li>
+                            <li>Optional: Merchant name and personal notes</li>
+                        </ul>
+                        All this data is stored locally on your device in iOS UserDefaults. The app then calculates your cashback earnings based on the card's rates from our database.
+                    </li>
                 </ul>
 
-                <h4>Country/Region Selection:</h4>
-                <p>CardWise allows you to select your country or region. This setting:</p>
+                <h4>What Stays on Your Device:</h4>
+                <p>All of the following data is stored exclusively on your device using iOS UserDefaults and never leaves your device:</p>
                 <ul>
-                    <li>Is stored <strong>locally on your device only</strong></li>
-                    <li>Is used to customize the app's spending categories to match local shopping patterns</li>
-                    <li>Adjusts currency display and formatting</li>
-                    <li>May enable region-specific card types and templates</li>
-                    <li><strong>Is never transmitted to our servers or any third party</strong></li>
+                    <li>Your selected country</li>
+                    <li>Your saved cards (only the card IDs from our database, nicknames, and dates you added them)</li>
+                    <li>All your transaction records (amounts, categories, dates, optional merchant names and notes)</li>
+                    <li>Calculated cashback earnings</li>
+                    <li>App preferences and settings</li>
                 </ul>
-                <p>Your country selection is purely for enhancing your local experience - we have no way of knowing which country you selected.</p>
             </section>
 
             <section>
                 <h3>Local Data Storage Only</h3>
-                <p>All data you enter into CardWise is stored exclusively on your device using Apple's secure local storage (Core Data). This includes:</p>
+                <p>All data you enter into CardWise is stored exclusively on your device using iOS UserDefaults (Apple's secure local storage). This includes:</p>
                 <ul>
-                    <li><strong>Card Information:</strong> Only the card nicknames you create and the cashback rates you enter for your cards</li>
-                    <li><strong>Transaction Records:</strong> Spending amounts and categories you manually log</li>
-                    <li><strong>Spending Insights:</strong> All statistics, charts, and recommendations are calculated locally on your device</li>
-                    <li><strong>App Settings:</strong> Your preferences, selected country/region, and app customizations</li>
+                    <li><strong>Card Preferences:</strong> Which cards you've selected from our database and any nicknames you've added</li>
+                    <li><strong>Transaction Records:</strong> All spending amounts, categories, dates, and optional merchant names you manually log</li>
+                    <li><strong>Spending Insights:</strong> All statistics, charts, cashback calculations, and card recommendations are computed locally on your device</li>
+                    <li><strong>App Settings:</strong> Your selected country, preferences, and app customizations</li>
                 </ul>
-                <p><strong>Important:</strong> This data never leaves your device. It is not synced to our servers, transmitted over the internet, or shared with anyone. The data is protected by your device's security measures, including encryption when your device is locked.</p>
+                <p><strong>Important:</strong> This data never leaves your device. It is not synced to our servers, transmitted over the internet, or shared with anyone. The data is protected by your device's security measures, including iOS encryption when your device is locked.</p>
             </section>
 
             <section>
@@ -78,12 +87,13 @@
                 <p>CardWise is a <strong>manual tracking and recommendation tool</strong>, not a bank or financial institution. Here's what that means:</p>
                 <ul>
                     <li>You are <strong>never</strong> asked to connect your actual bank accounts</li>
-                    <li>You are <strong>never</strong> asked to provide real credit card numbers</li>
-                    <li>You are <strong>never</strong> asked to enter CVV codes or security information</li>
-                    <li>All card information is entered manually by you using nicknames of your choice</li>
-                    <li>Transaction tracking is completely manual - you log what you want to track</li>
+                    <li>You are <strong>never</strong> asked to provide real credit card numbers, CVV codes, or expiration dates</li>
+                    <li>You simply <strong>select your card type</strong> from our database of popular credit cards</li>
+                    <li>The app uses publicly available cashback rate information for these cards</li>
+                    <li>Transaction tracking is completely manual - you decide what to log</li>
+                    <li>Optional nicknames you create are for your reference only</li>
                 </ul>
-                <p>This manual approach ensures maximum privacy: we can't collect what you don't provide, and you're in complete control of every piece of information in the app.</p>
+                <p>This manual selection approach ensures maximum privacy: we can't collect sensitive information because you never provide it. You're in complete control of every piece of information in the app.</p>
             </section>
 
             <section>
@@ -174,12 +184,13 @@
                 <h3>Summary</h3>
                 <p><strong>The Bottom Line:</strong></p>
                 <ul>
-                    <li>✅ You enter only card <strong>nicknames</strong>, not real card numbers</li>
-                    <li>✅ All data is stored <strong>locally on your device</strong></li>
-                    <li>✅ Your country selection is <strong>only used locally</strong> to customize the app</li>
+                    <li>✅ You <strong>select card types</strong> from our database - never enter real card numbers, CVV codes, or credentials</li>
+                    <li>✅ Cashback rates come from our <strong>pre-loaded database</strong> - you don't manually enter or configure them</li>
+                    <li>✅ All transaction data is stored <strong>locally on your device</strong> in iOS UserDefaults</li>
+                    <li>✅ Your country selection is <strong>only used locally</strong> to show relevant cards and currency</li>
                     <li>✅ <strong>Nothing is sent to our servers</strong> - no tracking, no analytics, no data collection</li>
                     <li>✅ We can't access your data even if we wanted to - <strong>we never receive it</strong></li>
-                    <li>✅ Your financial information, spending habits, and personal preferences remain <strong>100% private</strong></li>
+                    <li>✅ Your spending habits, transaction history, and preferences remain <strong>100% private</strong></li>
                 </ul>
                 <p>CardWise is built with privacy by design. We believe your financial data is yours alone, and we've architected the app to ensure it stays that way.</p>
             </section>
