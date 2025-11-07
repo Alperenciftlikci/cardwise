@@ -278,113 +278,28 @@ header {
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    color: var(--dark);
-    padding: 80px 0 0;
-    margin-top: 0;
-    border-top: 1px solid rgba(0, 120, 204, 0.1);
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 80px;
-    margin-bottom: 0;
-    padding-bottom: 60px;
-}
-
-.footer-brand h4 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    background: linear-gradient(135deg, var(--blue) 0%, var(--green) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.footer-brand .tagline {
-    color: var(--dark);
-    margin-bottom: 15px;
-    font-size: 1.05em;
-    font-weight: 600;
-}
-
-.footer-description {
-    color: var(--gray) !important;
-    font-size: 0.95em !important;
-    line-height: 1.7;
-    max-width: 450px;
-    margin-bottom: 30px !important;
-}
-
-.footer-contact {
-    margin-top: 25px;
-    padding: 20px;
-    background: white;
-    border-radius: 12px;
-    max-width: 350px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-.contact-label {
-    color: var(--dark);
-    font-size: 0.9em;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.contact-email {
-    color: var(--blue);
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: 500;
-    transition: all 0.3s;
-    display: inline-block;
-}
-
-.contact-email:hover {
-    color: var(--green);
-    transform: translateX(3px);
+    background: var(--dark);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
 }
 
 .footer-links {
     display: flex;
-    gap: 80px;
-    justify-content: flex-end;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
 }
 
-.footer-column h5 {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    color: var(--dark);
-    font-weight: 700;
-}
-
-.footer-column a {
-    display: block;
-    color: var(--gray);
-    text-decoration: none;
-    margin-bottom: 12px;
-    transition: all 0.3s;
-    font-size: 1em;
-    font-weight: 500;
-}
-
-.footer-column a:hover {
-    color: var(--blue);
-    transform: translateX(3px);
-}
-
-.footer-bottom {
-    text-align: center;
-    padding: 25px 0;
-    background: linear-gradient(135deg, var(--blue) 0%, var(--green) 100%);
-}
-
-.footer-bottom p {
+.footer-links a {
     color: white;
-    font-size: 0.95em;
-    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+    opacity: 0.7;
 }
 
 /* Legal Pages */
@@ -440,20 +355,10 @@ footer {
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-
-    .footer-links {
-        justify-content: flex-start;
-        gap: 50px;
-    }
 }
 
 @media (max-width: 640px) {
-    .header {
+    header {
         flex-direction: column;
         gap: 20px;
     }
@@ -482,10 +387,6 @@ footer {
 
     .footer-links {
         flex-direction: column;
-        gap: 40px;
-    }
-
-    .footer-brand h4 {
-        font-size: 1.5em;
+        gap: 1rem;
     }
 }
